@@ -1,0 +1,27 @@
+﻿<Window x:Class="PlantillaDeAplicacionREVIT.MainWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PlantillaDeAplicacionREVIT"
+             xmlns:translate="clr-namespace:PlantillaDeAplicacionREVIT.translations"
+             mc:Ignorable="d" 
+             Title="{Binding windowTitleText}"
+             SizeToContent="WidthAndHeight">
+    
+    <StackPanel Orientation="Vertical" Margin="10">
+
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Button Content="{x:Static translate:MainWindow.PickAnElement}" Command="{Binding AskUserToPickAnElement}" HorizontalAlignment="Left" Height="30" Width="200" />
+            <TextBox Text="{Binding aboutPickedElement, Mode=OneWay}" IsReadOnly="True" Margin="10"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Button Command="{Binding InsertAnElement}" HorizontalAlignment="Left" Height="60" Width="200" Margin="0,20">
+                <TextBlock TextWrapping="Wrap" Text="{x:Static translate:MainWindow.InsertAnElement}" />
+            </Button>
+        </StackPanel>
+
+    </StackPanel>
+
+</Window>

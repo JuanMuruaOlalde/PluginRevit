@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+      <Name>PlantillaDeAplicacionREVIT</Name>
+      <AddInId>49C97B69-DC9C-46D5-B460-862A19A24C6E</AddInId>
+      <Assembly>.\PlantillaDeAplicacionREVIT\PlantillaDeAplicacionREVIT.dll</Assembly>
+      <FullClassName>PlantillaDeAplicacionREVIT.Main</FullClassName>
+      <VendorId>xxxxxxx</VendorId>
+      <VendorDescription>xxxxxxx</VendorDescription>
+      <Visibility>NotVisibleWhenNoActiveDocument</Visibility>
+      <Visibility>NotVisibleInFamily</Visibility>
+  </AddIn>
+</RevitAddIns>
